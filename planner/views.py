@@ -47,8 +47,8 @@ def add_place(request, attraction):
     if request.method == 'POST':
         print(attraction)
         for item in all_attractions:
-            print(item.id)
+            # print(item.id)
             if item.id == attraction:
                 Destination = Place(api_id=item.id, name=item.name)
                 Destination.save()
-    # return HttpResponseRedirect('/')
+    return HttpResponseRedirect('')
