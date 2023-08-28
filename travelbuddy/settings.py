@@ -32,7 +32,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = development
+# DEBUG = development
+DEBUG = True
 
 ALLOWED_HOSTS = ['rk-django-api-testing-0f8531b1eb33.herokuapp.com',
                 '8000-rkillickdev-djangoapite-0qpi4ztxqjo.ws-eu104.gitpod.io']
