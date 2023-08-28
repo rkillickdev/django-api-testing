@@ -8,6 +8,11 @@
 {% for attraction in attractions%}
     <li>{{attraction.name}} {{attraction.rank}}</li>
 
+    <form action="{% url 'API-add' attraction.id %}" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Add Item to List" />
+    </form>
+
 {% endfor %}
 
 </ul>
